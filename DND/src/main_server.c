@@ -1,6 +1,6 @@
 #include "../include/server_header.h"
 #include <pthread.h>
-#define PORT 9316
+#define PORT 2456
 
 
 const char *log_levels[] = {
