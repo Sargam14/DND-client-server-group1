@@ -1,0 +1,27 @@
+==30823== Memcheck, a memory error detector
+==30823== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30823== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30823== Command: ./main_server.c
+==30823== 
+./main_server.c: 6: ./main_server.c: const: not found
+./main_server.c: 7: ./main_server.c: FATAL,: not found
+./main_server.c: 8: ./main_server.c: INFO,: not found
+./main_server.c: 9: ./main_server.c: WARNING,: not found
+./main_server.c: 10: ./main_server.c: DEBUG: not found
+./main_server.c: 11: ./main_server.c: Syntax error: "}" unexpected
+==30823== 
+==30823== HEAP SUMMARY:
+==30823==     in use at exit: 761 bytes in 25 blocks
+==30823==   total heap usage: 44 allocs, 19 frees, 41,849 bytes allocated
+==30823== 
+==30823== LEAK SUMMARY:
+==30823==    definitely lost: 0 bytes in 0 blocks
+==30823==    indirectly lost: 0 bytes in 0 blocks
+==30823==      possibly lost: 0 bytes in 0 blocks
+==30823==    still reachable: 761 bytes in 25 blocks
+==30823==         suppressed: 0 bytes in 0 blocks
+==30823== Reachable blocks (those to which a pointer was found) are not shown.
+==30823== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==30823== 
+==30823== For counts of detected and suppressed errors, rerun with: -v
+==30823== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
